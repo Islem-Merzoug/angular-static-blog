@@ -1,0 +1,24 @@
+<li [ngClass]="{'list-group-item': true, 'list-group-item-success': [loveIts]>[dontLoveIts], 'list-group-item-danger': [loveIts]<[dontLoveIts]}">
+  <h1> {{title}} <span style="position: absolute; right: 20px;">{{ created_at |date: 'short' }}</span> </h1>
+    <p> {{ content }} </p>
+    <button class="btn btn-success" (click)="onLove()">Love It!</button>&nbsp;
+    <button class="btn btn-danger" (click)="onDontLove()">Dont Love It!</button>
+    <span style="position: absolute; right: 20px;">
+      <button> {{ loveIts }} </button>
+    </span>
+</li>
+
+
+<!--<li>-->
+<!--  <h1> {{title}} <span style="position: absolute; right: 20px;"> {{ created_at |date: "short }} </span> </h1>-->
+<!--    <p>{{ content }}</p>-->
+<!--    <button class="btn btn-success" (click)="onLove()">Love It!</button>-->
+<!--    <button class="btn btn-danger" (click)="onDontLove()">Dont Love It!</button>-->
+<!--    <span style="position: absolute; right: 20px;">-->
+<!--      <button> {{ loveIt }} </button>-->
+<!--      <button> {{ dontLoveIts }} </button>-->
+<!--    </span>-->
+
+<!--</li>-->
+
+
